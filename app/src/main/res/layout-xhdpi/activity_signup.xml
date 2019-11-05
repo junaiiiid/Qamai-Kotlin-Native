@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+
+        <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/mainLayout"
+                android:layout_alignParentTop="true"
+                android:id="@+id/headerLayout">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_horizontal">
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/logo_small"
+                        android:layout_centerVertical="true"
+                />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:id="@+id/mainLayout"
+                android:orientation="vertical">
+
+
+            <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/first_name_txt"
+                    android:ems="10"
+                    android:hint="@string/Fname"
+                    android:inputType="text"
+                    android:layout_gravity="center"
+                    android:gravity="top"
+                    android:fontFamily="@font/raleway"
+                    android:textColor="@color/LightGray"
+                    android:textSize="16sp"
+            >
+            </EditText>
+
+            <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/last_name_txt"
+                    android:ems="10"
+                    android:hint="@string/Lname"
+                    android:inputType="text"
+                    android:layout_gravity="center"
+                    android:gravity="top"
+                    android:fontFamily="@font/raleway"
+                    android:textColor="@color/LightGray"
+                    android:textSize="16sp"
+            >
+            </EditText>
+
+
+            <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/date_txt"
+                    android:ems="10"
+                    android:hint="@string/dob"
+                    android:inputType="date"
+                    android:layout_gravity="center"
+                    android:gravity="top"
+                    android:fontFamily="@font/raleway"
+                    android:textColor="@color/LightGray"
+                    android:textSize="16sp"
+            >
+            </EditText>
+
+            <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cnic_txt"
+                    android:ems="10"
+                    android:hint="@string/CNIC"
+                    android:inputType="number"
+                    android:layout_gravity="center"
+                    android:gravity="top"
+                    android:fontFamily="@font/raleway"
+                    android:textColor="@color/LightGray"
+                    android:textSize="16sp"
+            >
+            </EditText>
+
+            <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/email_txt"
+                    android:ems="10"
+                    android:hint="@string/email"
+                    android:inputType="text"
+                    android:layout_gravity="center"
+                    android:gravity="top"
+                    android:fontFamily="@font/raleway"
+                    android:textColor="@color/LightGray"
+                    android:textSize="16sp"
+            >
+            </EditText>
+
+            <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/phonenum_txt"
+                    android:ems="10"
+                    android:hint="@string/Phone"
+                    android:inputType="text"
+                    android:layout_gravity="center"
+                    android:gravity="top"
+                    android:fontFamily="@font/raleway"
+                    android:textColor="@color/LightGray"
+                    android:textSize="16sp"
+            >
+            </EditText>
+
+            <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/password_txt"
+                    android:ems="10"
+                    android:hint="@string/password"
+                    android:inputType="textPassword"
+                    android:layout_gravity="center"
+                    android:gravity="top"
+                    android:fontFamily="@font/raleway"
+                    android:textColor="@color/LightGray"
+                    android:textSize="16sp"
+            >
+            </EditText>
+
+            <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/reppassword_txt"
+                    android:ems="10"
+                    android:hint="@string/Rpassword"
+                    android:inputType="textPassword"
+                    android:layout_gravity="center"
+                    android:gravity="top"
+                    android:fontFamily="@font/raleway"
+                    android:textColor="@color/LightGray"
+                    android:textSize="16sp"
+            >
+            </EditText>
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/mainLayout"
+                android:id="@+id/footerLayout">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true">
+
+                <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/terms"
+                            android:layout_alignParentBottom="true"
+                            android:textSize="8sp"
+                            android:layout_centerHorizontal="true"
+                            android:fontFamily="@font/raleway"
+                            android:textColor="@color/LightGray"
+                            android:id="@+id/terms_txt"
+                            android:layout_alignBottom="@+id/btn_signup"
+                    />
+
+                    <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:id="@+id/btn_signup"
+                            android:text="@string/signup"
+                            android:background="@drawable/button_black"
+                            android:fontFamily="@font/raleway" android:textSize="12sp"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerVertical="true"
+                            android:layout_centerHorizontal="true"
+
+                    />
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

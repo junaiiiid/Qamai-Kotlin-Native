@@ -1,0 +1,20 @@
+<resources>
+    <string name="appname">Qamai</string>
+    <string name="forgot_password">Forgot password ? tap here</string>
+    <string name="signup_text">New to Qamai? Sign Up</string>
+    <string name="login">Log In</string>
+    <string name="signup">Sign Up</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="Fname">First Name</string>
+    <string name="Lname">Last Name</string>
+    <string name="CNIC">CNIC number</string>
+    <string name="Rpassword">Repeat Password</string>
+    <string name="terms">I agree to Qamai"'s Terms of Service and Privacy Policy.
+    </string>
+    <string name="dob">Date Of Birth</string>
+    <string name="Phone">Phone Number</string>
+    <string name="FPA1">Forgot your password?</string>
+    <string name="FPA2">We"'ll send you instructions on how to change it. Please confirm your email,Tap Submit, and then check your mailbox for further instructions</string>
+    <string name="submit">Submit</string>
+</resources>
